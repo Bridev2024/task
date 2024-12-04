@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Task Manager</h1>
+    </header>
+    <main>
+      <div class="task-controls">
+        <input type="text" id="taskInput" placeholder="Add a new task..." />
+        <select id="taskPriority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button id="addTaskButton">Add Task</button>
+      </div>
+      <div class="filter-controls">
+        <button id="filterAll" class="filter-button active">All</button>
+        <button id="filterCompleted" class="filter-button">Completed</button>
+        <button id="filterPending" class="filter-button">Pending</button>
+      </div>
+      <ul id="taskList"></ul>
+    </main>
+    <footer>
+      <p>&copy; 2024 Bright Task Manager. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
